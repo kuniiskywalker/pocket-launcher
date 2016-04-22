@@ -1,0 +1,13 @@
+source "https://rubygems.org"
+ruby "2.2.0"
+
+gem 'sinatra'
+gem 'pocket-ruby', '0.0.5', :require => 'pocket'
+gem 'activesupport'
+gem 'i18n'
+
+gem 'nokogiri'
+
+gem 'faraday'
+
+# gem 'extractcontent', :git => 'https://github.com/mono0x/extractcontent.git'

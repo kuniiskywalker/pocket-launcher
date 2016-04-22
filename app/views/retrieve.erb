@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+<% @list.each do |item| %>
+
+<div>タイトル：<a href="<%= item["given_url"] %>" target="_blank"><%= item["given_title"] %></a> </div>
+<br>
+<% item["sentences"].each_with_index do |sentence, idx| %>
+<div>【要約<%= idx+1 %>】 <%= sentence %></div>
+<br>
+<% end %>
+---------------------
+<br><br>
+<% end %>
+<script src="jquery.min.js"></script>
+<script src="dist/app.js"></script>
+</body>
+</html>

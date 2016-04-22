@@ -1,0 +1,7 @@
+web:
+  environment:
+    HTTP_HOST: https://pocket.kuniiskywalker.net
+    POCKET_CONSUMER_KEY: 53593-6842340df8f29d90783eff1e
+    VIRTUAL_HOST: pocket.kuniiskywalker.net
+    LETSENCRYPT_HOST: pocket.kuniiskywalker.net
+    LETSENCRYPT_EMAIL: kuniiskywalker@gmail.com
