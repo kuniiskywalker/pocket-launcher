@@ -81,7 +81,8 @@ get "/retrieve" do
 end
 
 def get_plain_text_at_site(url)
-  page = URI.parse("http://scraping:8080?url=" + url).read
+  
+  page = URI.parse("http://scraping:8080?url=" + ERB::Util.url_encode(url)).read
   # charset = page.charset
   # if charset == "iso-8859-1"
   #   charset = page.scan(/charset="?([^\s"]*)/i).first.join
